@@ -51,6 +51,8 @@ namespace API.Controllers
             var result = new Result();
             result.result = total.ToString();
 
+
+            //se añade el resgistro de la operación a la base de datos
             var operation = new Operation();
             operation.N1 = n1.ToString();
             operation.N2 = n2.ToString();
@@ -58,6 +60,8 @@ namespace API.Controllers
             _context.Operations.Add(operation);
             _context.SaveChanges();
 
+
+            //se verifica que sí pertenezca a la serie de fibonacci
             for(int i = 0; i < 100; i++)   
             {
                 if(total == fibonacci[i])
@@ -67,6 +71,7 @@ namespace API.Controllers
                 }
             }
 
+            //nota: El valor por defecto de result.fibo es false (ver Modelo)
             return result;
 
         }
