@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  background: #000000;
+  min-height: 100vh;
+  color: #e5daff;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+.number-inputs {
+  margin-bottom: 20px;
+}
+
+input {
+  font-size: 80px;
+  border-radius: 10px;
+  border: 1px solid #d2c0fd;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  background: #210466;
+  color: #2a1263;
+}
+
+input:first-child {
+  margin-right: 20px;
+}
+
+button {
+  padding: 30px 40px;
+  font-size: 30px;
+  border-radius: 20px 40px;
+  background: #3c30e6;
+  border: none;
+  margin-bottom: 50px;
+  color: #d7cbf7;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 150px;
+}
