@@ -8,6 +8,7 @@ using API.Class;
 using System.Numerics;
 using Microsoft.Extensions.Configuration;
 using API.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace API.Controllers
 {
