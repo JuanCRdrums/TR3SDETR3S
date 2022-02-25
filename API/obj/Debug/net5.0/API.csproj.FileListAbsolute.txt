@@ -30,7 +30,6 @@ C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\Microsoft.EntityFramewo
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\web.config
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\EntityFramework.dll
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\Humanizer.dll
 C:\Users\juank\Documents\TR3SDETR3S\API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
