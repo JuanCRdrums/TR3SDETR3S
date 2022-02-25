@@ -1,0 +1,22 @@
+USE [TR3SDETR3S]
+GO
+
+/****** Object:  Table [dbo].[Operations]    Script Date: 25/02/2022 2:32:57 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Operations](
+	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[n1] [nvarchar](50) NOT NULL,
+	[n2] [nvarchar](50) NOT NULL,
+	[result] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Operations] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
