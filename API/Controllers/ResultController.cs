@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API.Models;
+using API.Class;
 using System.Numerics;
+using Microsoft.Extensions.Configuration;
+using API.Models;
 
 namespace API.Controllers
 {
@@ -13,6 +15,12 @@ namespace API.Controllers
     [ApiController]
     public class ResultController : ControllerBase
     {
+        private readonly TR3SDETR3SContext _context;
+        public ResultController(TR3SDETR3SContext context)
+        {
+            _context = context;
+        }
+
         [HttpPost]
         public Result result(Request request)
         { 
@@ -43,7 +51,14 @@ namespace API.Controllers
             var result = new Result();
             result.result = total.ToString();
 
-            for(int i = 0; i < 100; i++)
+            var operation = new Operation();
+            operation.N1 = n1.ToString();
+            operation.N2 = n2.ToString();
+            operation.Result = total.ToString();
+            _context.Operations.Add(operation);
+            _context.SaveChanges();
+
+            for(int i = 0; i < 100; i++)   
             {
                 if(total == fibonacci[i])
                 {
